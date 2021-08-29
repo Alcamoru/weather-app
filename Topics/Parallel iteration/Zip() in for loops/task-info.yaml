@@ -1,0 +1,18 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    # please do not modify the following code
+    interest_rates = [float(x) for x in input().split(',')]
+    years = [int(x) for x in input().split(',')]
+    loan_principles = [int(x) for x in input().split(',')]
+
+    # your code here
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/14565#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Fri, 27 Aug 2021 13:03:12 UTC
+record: -1

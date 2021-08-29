@@ -1,0 +1,16 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    # please do not modify the following code
+    _d_list = [keyword.split(':') for keyword in input().split(', ')]
+    domestic_animal = {key: value for key, value in _d_list}
+    _w_list = [keyword.split(':') for keyword in input().split(', ')]
+    wild_animal = {key: value for key, value in _w_list}
+
+    # your code here
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/14566#comment
+status: Unchecked
+record: -1
