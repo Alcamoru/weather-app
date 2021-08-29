@@ -1,0 +1,14 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    def morning():
+        ...
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10107#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Sun, 29 Aug 2021 06:48:59 UTC
+record: -1

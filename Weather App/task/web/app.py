@@ -1,7 +1,10 @@
+import json
+import sys
+
+import requests
 from flask import Flask
 from flask import render_template
 from flask import request
-import sys
 
 app = Flask(__name__)
 
@@ -11,11 +14,15 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/add', methods=['POST'])
+@app.route('/', methods=['POST'])
 def add_city():
     city_name = request.form["city_name"]
-    print(city_name)
-    return render_template('index.html')
+    r = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={city_name}"
+                     f"&appid=58058341b60d9730423df34082a652e2")
+    weather_data: dict = json.loads(r.content)
+    data = {"temp": int(weather_data["main"]["temp"]) - 273, "city": city_name, }
+
+    return render_template('index.html', weather=data)
 
 
 # don't change the following way to run flask:

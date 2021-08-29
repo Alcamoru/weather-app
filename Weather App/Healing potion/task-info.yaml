@@ -236,5 +236,26 @@ files:
         FlaskProjectTest().run_tests()
   learner_created: false
 feedback_link: https://hyperskill.org/projects/164/stages/854/implement#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: |-
+    Wrong answer in test #2
+
+    Found 3 <div> blocks with class 'card', but should be 0!
+
+    Please find below the output of your program during this failed test.
+
+    ---
+
+    stdout:
+    * Serving Flask app "app" (lazy loading)
+     * Environment: production
+       WARNING: This is a development server. Do not use it in a production deployment.
+       Use a production WSGI server instead.
+     * Debug mode: off
+
+    stderr:
+    * Running on http://localhost:8000/ (Press CTRL+C to quit)
+    127.0.0.1 - - [29/Aug/2021 17:56:32] "
+  time: Sun, 29 Aug 2021 15:56:35 UTC
 record: -1
